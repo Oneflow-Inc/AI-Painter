@@ -1,8 +1,8 @@
 # AI Painter by OneFlow
 
-![](./screenshot.png)
+![image](https://user-images.githubusercontent.com/76760002/208841976-2b7e1e88-5404-4113-a1e3-02a38e727a9c.png)
+A browser interface for [OneFlow Diffusers](https://github.com/Oneflow-Inc/diffusers) inspired by [Stable Diffusion Web UI](https://github.com/AUTOMATIC1111/stable-diffusion-webui),the functions of txt2img and img2img are realized
 
-A browser interface for [OneFlow Diffusers](https://github.com/Oneflow-Inc/diffusers) inspired by [Stable Diffusion Web UI](https://github.com/AUTOMATIC1111/stable-diffusion-webui).
 
 ## How to Run
 
