@@ -36,7 +36,7 @@ class DiffusionImg2ImgPipelineHandler:
             model_id, subfolder="scheduler"
         )
         # pipe = pipe.to(device_placement)
-        pipe = pipe.to("cuda:1")
+        pipe = pipe.to("cuda")
         logging.info("DiffusionImg2ImgPipeline initialization completed")
 
     def __init__(
@@ -53,7 +53,7 @@ class DiffusionImg2ImgPipelineHandler:
         eta=0.0,
         seed: int = -1,
         output_type="pil",
-        device_placement="cuda:1",
+        device_placement="cuda",
     ):
         self.prompt = prompt
         self.image = init_image.resize((width, height))
