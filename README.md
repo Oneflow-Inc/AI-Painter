@@ -15,7 +15,8 @@ docker run -it --rm \
   -v ${PWD}/.cache:/root/.cache \
   -w /workspace \
   oneflowinc/ai-painter:cu112 
-  
+
+sh setup_env.sh
 pip uninstall oneflow
 python3 -m pip install -f https://staging.oneflow.info/branch/master/cu112 --pre oneflow
 python3 launch.py --ip 0.0.0.0 --port 7860
