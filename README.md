@@ -34,6 +34,13 @@ Launch the server:
 ```bash
 python3 launch.py --ip 0.0.0.0 --port 7860
 ```
+If this fails, try the following two commands to install the latest oneflow
+```bash
+pip uninstall oneflow
+python3 -m pip install -f https://staging.oneflow.info/branch/master/cu112 --pre oneflow
+```
+Then rerun the script.
+
 
 ### Launch Options
 
@@ -43,4 +50,4 @@ There are other options besides `ip` and `port` mentioned above.
 - `--graph-mode`: use OneFlow graph mode which will accelerate the inference (but limited by fixed tensor shape)
 - `--device`: Target a specific device, eg: `cuda:0` means the first GPU and `cuda:1` means the second GPU
 
-### Using Jupyter
+
